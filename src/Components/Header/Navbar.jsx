@@ -4,22 +4,22 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Navbar = () =>{
     return (
-        <>
-          <Grid conatiner>
-             <Grid item>
-                {/* <AkLogo ></AkLogo> */}
+        
+          <Grid container spacing={2}>
+             <Grid item xs={2}>
+                <AkLogo ></AkLogo>
              </Grid>
-             <Grid item>
-                {/* <a href="https://github.com/kaffan"><FontAwesomeIcon icon="fa-brands fa-github" /></a> */}
+             <Grid item xs={2}>
+                <a href="https://github.com/kaffan"><FontAwesomeIcon icon="fa-brands fa-github" /></a>
              </Grid>
-             <Grid item>
-                {/* <a href="https://www.linkedin.com/in/affan-khan-6626b9195/"><FontAwesomeIcon icon="fa-brands fa-linkedin" /></a> */}
+             <Grid item xs={2}>
+                <a href="https://www.linkedin.com/in/affan-khan-6626b9195/"><FontAwesomeIcon icon="fa-brands fa-linkedin" /></a>
              </Grid>
-             <Grid item>
+             <Grid item xs={2}>
                 <a href="https://twitter.com/Affankh37437391"><FontAwesomeIcon icon="fa-brands fa-twitter" /></a>
              </Grid>
           </Grid>
-        </>
+        
     );
 }
 

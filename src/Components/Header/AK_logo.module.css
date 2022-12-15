@@ -1,19 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap'); 
 
 .logo{
-    margin : 3px;
-    padding: 3px;
     text-align: center;
-    animation: spin 2s linear infinite;
-    border-top: 2px solid red;
+    /* animation: spin 2s linear infinite; */
+    border: 2px solid red;
+    height: 50px;
+    width: 50px;
     border-radius: 50%;
 }
 
 .logo_text{
-    color: rgba(0,0,0,0);
+    color: rgba(0,0,0,1);
+    position: relative;
+    top: 30%;
     font-size: large;
     font-family: 'Rubik', sans-serif;
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 
 @keyframes spin{
