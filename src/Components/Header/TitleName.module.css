@@ -1,0 +1,34 @@
+.textIn{
+    animation: 
+        typing1 3s steps(60,end),
+        cursorBlink 1s step-end infinite;
+}
+
+.textOut{
+    animation: 
+        typing2 3s steps(60,end),
+        cursorBlink 1s step-end infinite;
+}
+
+.h1Edit{
+    font-size: 4vw;
+    margin: 0 auto;
+    overflow: hidden;
+    color: black;
+    border-right: 0.15em solid grey;
+    white-space: nowrap;
+    /* animation: cursorBlink 0.5s step-end infinite; */
+}
+
+@keyframes typing1{
+    from{width:0%}
+    to{width: 100%}
+}
+@keyframes typing2{
+    from{width:100%}
+    to{width: 0%}
+}
+@keyframes cursorBlink{
+    from,to{border-color: transparent}
+    50%{border-color: grey;}
+}
