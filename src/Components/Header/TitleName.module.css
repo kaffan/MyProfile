@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@300&display=swap'); 
+
 .textIn{
     animation: 
         typing1 3s steps(60,end),
@@ -11,12 +13,16 @@
 }
 
 .h1Edit{
-    font-size: 4vw;
+    font-size: 3.3vw;
+    font-family: 'Chivo Mono', monospace;
     margin: 0 auto;
+    display: block;
     overflow: hidden;
     color: black;
-    border-right: 0.15em solid grey;
+    border-right: 0.15em solid rgb(97, 112, 108);
     white-space: nowrap;
+    font-weight: 400;
+    text-shadow: 10px 5px 5px #FF0000;
     /* animation: cursorBlink 0.5s step-end infinite; */
 }
 

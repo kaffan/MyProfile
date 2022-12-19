@@ -17,7 +17,7 @@ const MyImage = () =>{
                 height:"20vw",
                 position:"relative",
                 left:"7%",
-                boxShadow:"10px 10px 40px grey"
+                boxShadow:"10px 10px 2px grey"
               }}
             ></img>
         </>

@@ -8,8 +8,8 @@ const TitleName = () =>{
     let ele = useRef();
     const EventHandler = () =>{
       if(!toggle.current){
+        (i>=arr.length) ? i = 1 : i = i+1;
         (i>=arr.length) ? ele.current.textContent = arr[0] : ele.current.textContent = arr[i];
-        (i>=arr.length) ? i = 0 : i = i+1;
         ele.current.classList.remove(styles.textOut);
         ele.current.classList.add(styles.textIn);
         toggle.current = true;
@@ -31,11 +31,9 @@ const TitleName = () =>{
     }
     return(
         <>
-          <div>
             <h1 className={[styles.h1Edit, styles.textIn].join(' ')} onAnimationEnd={EventHandler} ref={ele}>
                 {arr[i]}
             </h1>
-          </div>
         </>
     );
 }
