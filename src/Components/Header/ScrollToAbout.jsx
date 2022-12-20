@@ -6,7 +6,7 @@ const ScrollToAbout = () =>{
     // let body = useRef(document.querySelector('body'));
     const scrollHandler = (e) =>{
         window.scrollTo({
-            top:100,
+            top:window.innerHeight,
             behavior:"smooth"
         });
     }
