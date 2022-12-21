@@ -1,24 +1,32 @@
 import { useMediaQuery, useTheme } from "@mui/material";
-import { keyframes, css } from "@mui/system";
+import { css, keyframes } from "@emotion/react";
 
 const MyImage = () =>{
     const spin = keyframes`
       from{transform:rotate(0deg)}
       to{transform:rotate(360deg)}
    `
+   const imgCSS = css`
+     @media screen and (max-width:420px){
+      width:60vw;
+      height:60vw;
+     }
+   ` 
    const theme = useTheme();
    const match2 = useMediaQuery(theme.breakpoints.down('md'));
+   const match3 = useMediaQuery(`(max-width:420px)`);
     return(
         <>
-            <img src="./../myImage.jpg"
+            <img src="/profileImg.jpg"
               style={{
                 border:"15px solid #f2e6e6",
                 borderRadius:"50%",
-                width:`${(match2) ? "40vw" : "27vw"}`,
-                height:`${(match2) ? "40vw" : "27vw"}`,
-                position:"relative",
+                width:`${(match2) ? ((match3) ? "65vw" : "55vw") : "27vw"}`,
+                height:`${(match2) ? ((match3) ? "65vw" : "55vw") : "27vw"}`,
+                // position:"relative",
                 boxShadow:"10px 10px 2px grey"
               }}
+              css={imgCSS}
             ></img>
         </>
     );

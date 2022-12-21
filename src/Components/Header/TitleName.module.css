@@ -39,8 +39,8 @@
     50%{border-color: black;}
 }
 
-@media screen and (max-width:600px){
+@media screen and (max-width:900px){
     .h1Edit{
-        font-size: 4vw;
+        font-size: 4.3vw;
     }
 }

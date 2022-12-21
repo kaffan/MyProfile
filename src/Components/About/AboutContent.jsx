@@ -1,6 +1,10 @@
+import { useTheme, useMediaQuery } from "@mui/material";
+
+
 const AboutContent = () =>{
+    const media = useMediaQuery('(max-width:600px)');
     const contentStyling = {
-        fontSize:"1.5rem",
+        fontSize:(media) ? "4vw" : "2vw",
         textShadow:"5px 3px 2px grey",
         color:"white"
     }
