@@ -36,5 +36,11 @@
 }
 @keyframes cursorBlink{
     from,to{border-color: transparent}
-    50%{border-color: grey;}
+    50%{border-color: black;}
+}
+
+@media screen and (max-width:600px){
+    .h1Edit{
+        font-size: 4vw;
+    }
 }
