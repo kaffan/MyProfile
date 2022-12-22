@@ -14,7 +14,7 @@ const HeadMain = () =>{
         <>
           <Grid container direction="column" rowSpacing={(match2) ? 6.5 : 4.5}
             sx={{
-              backgroundImage:"linear-gradient(to right,rgba(221, 181, 181,0.5),rgba(0, 219, 175,1),rgba(12, 131, 137,1))",
+              backgroundImage:"linear-gradient(to right,rgba(221, 181, 181,0.5),rgba(153, 77, 234,0.8))",
               margin:"0"
             }} 
           >
@@ -24,7 +24,7 @@ const HeadMain = () =>{
             <Grid item
             sx={{flexGrow:"7",alignItems:"center",flexWrap:"wrap"}}
             >
-                <Grid container spacing={(match1) ? ((match2) ? 7 : 3) : 0}
+                <Grid container spacing={(match1) ? ((match2) ? 10 : 3) : 0}
                  sx={{
                   height:"100%",
                   alignItems:"center",
