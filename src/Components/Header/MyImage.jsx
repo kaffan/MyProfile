@@ -14,7 +14,7 @@ const MyImage = () =>{
    ` 
    const theme = useTheme();
    const match2 = useMediaQuery(theme.breakpoints.down('md'));
-   const match3 = useMediaQuery(`(max-width:420px)`);
+   const match3 = useMediaQuery(`(max-width:600px)`);
     return(
         <>
             <img src="/profileImg.jpg"

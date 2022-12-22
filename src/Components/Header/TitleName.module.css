@@ -18,10 +18,10 @@
     margin: 0 auto;
     display: block;
     overflow: hidden;
-    color: black;
+    color: rgb(36, 36, 36);
     border-right: 0.15em solid rgb(7, 7, 7);
     white-space: nowrap;
-    font-weight: 400;
+    font-weight: 600;
     text-shadow: 10px 5px 5px #FF0000;
     /* animation: cursorBlink 0.5s step-end infinite; */
 }
@@ -42,5 +42,11 @@
 @media screen and (max-width:900px){
     .h1Edit{
         font-size: 4.3vw;
+    }
+}
+@media screen and (max-width:450px){
+    .h1Edit{
+        max-width: 85%;
+        font-size: 5.5vw;
     }
 }
