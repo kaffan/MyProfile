@@ -12,6 +12,7 @@ const About = () =>{
     const aboutRef = useRef();
     const theme = useTheme();
     const media = useMediaQuery(`(max-width:450px)`);
+    const media2 = useMediaQuery(theme.breakpoints.down('sm'));
     const { scrollY } = useScroll({
         target: aboutRef,
         offset:["start start","end end"]
@@ -46,7 +47,7 @@ const About = () =>{
             backgroundSize:"cover",
             backdropFilter:"blur(5px)",
             backgroundPositionY:"50%",
-            backgroundPositionX:"15em"
+            backgroundPositionX:(media2) ? "0" : "15em"
            }}
            css={css`
             &::after{

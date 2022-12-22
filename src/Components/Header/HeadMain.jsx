@@ -24,7 +24,7 @@ const HeadMain = () =>{
             <Grid item
             sx={{flexGrow:"7",alignItems:"center",flexWrap:"wrap"}}
             >
-                <Grid container spacing={(match1) ? ((match2) ? 10 : 3) : 0}
+                <Grid container spacing={(match1) ? ((match2) ? 12 : 3) : 0}
                  sx={{
                   height:"100%",
                   alignItems:"center",
