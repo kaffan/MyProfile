@@ -30,7 +30,7 @@ const About = () =>{
         borderRadius:"10%",
         padding:"2em",
         border:"30px solid rgb(234, 168, 168)",
-        backgroundColor:"rgb(61, 64, 102)"
+        backgroundColor:"rgba(61, 64, 102, 0.7)",
 
     }
     return(

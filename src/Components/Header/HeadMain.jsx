@@ -14,7 +14,7 @@ const HeadMain = () =>{
         <>
           <Grid container direction="column" rowSpacing={(match2) ? 6.5 : 4.5}
             sx={{
-              backgroundImage:"linear-gradient(to right,rgba(221, 181, 181,0.5),rgba(153, 77, 234,0.8))",
+              backgroundImage:"linear-gradient(to right,rgba(221, 181, 181,0.5),rgba(153, 77, 234,0.5))",
               margin:"0"
             }} 
           >
