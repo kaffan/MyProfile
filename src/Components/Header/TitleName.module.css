@@ -42,6 +42,7 @@
 @media screen and (max-width:900px){
     .h1Edit{
         font-size: 4.3vw;
+        max-width: 65%;
     }
 }
 @media screen and (max-width:450px){
