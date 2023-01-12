@@ -24,7 +24,7 @@ const MyImage = () =>{
                 width:`${(match2) ? ((match3) ? "65vw" : "55vw") : "27vw"}`,
                 height:`${(match2) ? ((match3) ? "65vw" : "55vw") : "27vw"}`,
                 // position:"relative",
-                boxShadow:"10px 10px 2px grey"
+                boxShadow:"10px 10px 10px rgba(49, 51, 50, 0.7)"
               }}
               css={imgCSS}
             ></img>
