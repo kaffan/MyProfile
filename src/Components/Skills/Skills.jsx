@@ -15,14 +15,14 @@ const Skills = () =>{
     // const icons = [<FontAwesomeIcon icon={faReact} />,
     // <FontAwesomeIcon icon={faRedux} />]
     const match = useMediaQuery(`(max-width:900px)`);
-    const match1 = useMediaQuery(`(max-width:650px)`);
+    const match1 = useMediaQuery(`(min-width:650px)`);
     return (
         <>
           <div 
           style={{ padding:"4rem 2rem"}}>
             <div
             style={{
-              textAlign: (match1) ? "center" : "left",
+              textAlign: (match1) ? "left" : "center",
               padding:"0 4rem"
             }}>
               <h1
@@ -32,7 +32,7 @@ const Skills = () =>{
                 fontSize:"2.5rem"
               }}>Skills</h1>
             </div>
-            <Grid container rowSpacing={6}
+            <Grid container rowSpacing={6} direction={(match1) ? "row" : "column"}
             style={{
               padding: (match) ? "5rem 2rem" : "5rem 0"
             }}>
