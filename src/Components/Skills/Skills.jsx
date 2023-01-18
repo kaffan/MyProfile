@@ -1,6 +1,6 @@
 import { faReact } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Grid } from '@mui/material';
+import { Grid, useMediaQuery } from '@mui/material';
 
 const Skills = () =>{
     const skills = ['https://img.icons8.com/officel/80/null/react.png',
@@ -14,13 +14,15 @@ const Skills = () =>{
     const skillset = ['React.js','Redux','Material UI','Javscript','CSS3','HTML5','REST API'];              
     // const icons = [<FontAwesomeIcon icon={faReact} />,
     // <FontAwesomeIcon icon={faRedux} />]
+    const match = useMediaQuery(`(max-width:900px)`);
+    const match1 = useMediaQuery(`(max-width:650px)`);
     return (
         <>
           <div 
           style={{ padding:"4rem 2rem"}}>
             <div
             style={{
-              textAlign:"left",
+              textAlign: (match1) ? "center" : "left",
               padding:"0 4rem"
             }}>
               <h1
@@ -32,7 +34,7 @@ const Skills = () =>{
             </div>
             <Grid container rowSpacing={6}
             style={{
-              padding:"5rem 0"
+              padding: (match) ? "5rem 2rem" : "5rem 0"
             }}>
               {
                 skills.map((ele,i)=>( 
