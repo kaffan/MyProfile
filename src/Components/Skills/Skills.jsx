@@ -23,16 +23,21 @@ const Skills = () =>{
               textAlign:"left",
               padding:"0 4rem"
             }}>
-              <h2>Skills</h2>
+              <h1
+              style={{
+                color: `rgb(36, 36, 36)`,
+                textShadow : `10px 7px 3px #5f5c5c`,
+                fontSize:"2.5rem"
+              }}>Skills</h1>
             </div>
             <Grid container rowSpacing={6}
             style={{
-              padding:"4rem 0"
+              padding:"5rem 0"
             }}>
               {
                 skills.map((ele,i)=>( 
-                  <Grid item md={3}>
-                    <Grid container direction="column">
+                  <Grid item sm={3}>
+                    <Grid container direction="column" rowSpacing={2}>
                       <Grid item><img src={ele} /></Grid>
                       <Grid item>{skillset[i]}</Grid>
                     </Grid>
