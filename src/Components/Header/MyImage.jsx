@@ -1,5 +1,6 @@
 import { useMediaQuery, useTheme } from "@mui/material";
 import { css, keyframes } from "@emotion/react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const MyImage = () =>{
     const spin = keyframes`
@@ -17,7 +18,7 @@ const MyImage = () =>{
    const match3 = useMediaQuery(`(max-width:700px)`);
     return(
         <>
-            <img src="/profileImg.jpg"
+            <LazyLoadImage src="/profileImg.jpg"
               style={{
                 border:"15px solid #f2e6e6",
                 borderRadius:"50%",
@@ -27,7 +28,7 @@ const MyImage = () =>{
                 boxShadow:"10px 10px 10px rgba(49, 51, 50, 0.7)"
               }}
               css={imgCSS}
-            ></img>
+            ></LazyLoadImage>
         </>
     );
 }
