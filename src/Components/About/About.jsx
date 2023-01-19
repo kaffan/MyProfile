@@ -74,9 +74,13 @@ const About = () =>{
             transform: [`translateX(-80px)`,`translateX(-60px)`,`translateX(-40px)`,`translateX(-20px)`,`translateX(0)`],
             opacity:[0.2,0.4,0.6,0.8,1]
           }}
+          viewport={{
+            amount:0.5, 
+            once : true 
+          }}
           transition={{
-              duration:1,
-              ease:"linear"    
+              duration:0.7,
+              ease:"easeInOut"    
           }}
           >
             <Grid item lg={6} sm={8} sx={aboutstyling}>

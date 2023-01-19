@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { icon, brands } from '@fortawesome/fontawesome-svg-core/import.macro' // <-- import styles to be used
 import { faTwitter, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 // import { textAlign } from '@mui/system';
+import { motion } from 'framer-motion';
 
 const Navbar = () =>{
     const theme = useTheme();
@@ -23,16 +24,28 @@ const Navbar = () =>{
                 width:`${(media) ? "100%" : "90%"}`
              }}>
              <Grid item md={6} xs={6}>
-                <AkLogo ></AkLogo>
+                 <AkLogo ></AkLogo>
              </Grid>
              <Grid item md={1.5} xs={2}>
+               <motion.div
+                whileHover={{scale : 1.4}}
+               >
                 <a href="https://github.com/kaffan"><FontAwesomeIcon style={{...iconStyles,color:"black"}} icon={faGithub} /></a>
+               </motion.div>
              </Grid>
              <Grid item md={1.5} xs={2}>
+               <motion.div
+                whileHover={{scale : 1.4}}
+               >
                 <a href="https://www.linkedin.com/in/affan-khan-6626b9195/"><FontAwesomeIcon style={iconStyles} icon={faLinkedin} /></a>
+               </motion.div>
              </Grid>
              <Grid item md={1.5} xs={2}>
+               <motion.div
+                whileHover={{scale : 1.4}}
+               >
                 <a href="https://twitter.com/Affankh37437391"><FontAwesomeIcon style={iconStyles} icon={faTwitter} /></a>
+               </motion.div>
              </Grid>
           </Grid>
         </>
