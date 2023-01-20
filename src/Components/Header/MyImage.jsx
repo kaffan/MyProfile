@@ -23,8 +23,8 @@ const MyImage = () =>{
               style={{
                 border:"30px solid #efe8e8",
                 borderRadius:"50%",
-                width:`${(match2) ? ((match3) ? "48vw" : "30vw") : "22vw"}`,
-                height:`${(match2) ? ((match3) ? "48vw" : "30vw") : "22vw"}`,
+                width:`${(match2) ? ((match3) ? "55vw" : "40vw") : "22vw"}`,
+                height:`${(match2) ? ((match3) ? "55vw" : "40vw") : "22vw"}`,
                 // position:"relative",
                 boxShadow:"10px 10px 10px rgba(49, 51, 50, 0.7)"
               }}
