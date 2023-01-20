@@ -31,11 +31,12 @@ const Skills = () =>{
             <h1
               style={{
                 color: `rgb(36, 36, 36)`,
-                textShadow: `10px 7px 3px #5f5c5c`,
+                // textShadow: `10px 7px 3px #5f5c5c`,
                 fontSize: "2.5rem",
+                fontFamily:"Montserrat, sans-serif"
               }}
             >
-              Skills
+              SKILLS
             </h1>
           </div>
           <Grid
