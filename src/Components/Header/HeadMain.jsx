@@ -9,7 +9,7 @@ import ScrollToAbout from './ScrollToAbout';
 const HeadMain = () =>{
     const theme = useTheme();
     const match1 = useMediaQuery(theme.breakpoints.down('md'));
-    const match2 = useMediaQuery(theme.breakpoints.up('sm'));
+    const match2 = useMediaQuery(theme.breakpoints.down('sm'));
     return(
         <>
           <Grid container direction="column" rowSpacing={(match1) ? 3 : 6.5} 
