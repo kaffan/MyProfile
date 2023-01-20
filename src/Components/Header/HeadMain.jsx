@@ -35,7 +35,7 @@ const HeadMain = () =>{
                     sx={{
                       textAlign:(match1) ? `center` : `left`
                     }}
-                    spacing={(match2) ? 2 : 0}>
+                    spacing={(match2) ? 5 : 0}>
                       <MyImage></MyImage>
                     </Grid>
                     <Grid item md={6} xs={12}
