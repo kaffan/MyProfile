@@ -9,10 +9,10 @@ import ScrollToAbout from './ScrollToAbout';
 const HeadMain = () =>{
     const theme = useTheme();
     const match1 = useMediaQuery(theme.breakpoints.down('md'));
-    const match2 = useMediaQuery(theme.breakpoints.down('sm'));
+    const match2 = useMediaQuery(theme.breakpoints.up('sm'));
     return(
         <>
-          <Grid container direction="column" rowSpacing={(match2) ? 6.5 : 4.5}
+          <Grid container direction="column" rowSpacing={(match1) ? 0 : 6.5} 
             sx={{
               // backgroundImage:"linear-gradient(to right,rgba(221, 181, 181,0.5),rgba(153, 77, 234,0.5))",
               margin:"0"
@@ -24,17 +24,23 @@ const HeadMain = () =>{
             <Grid item
             sx={{flexGrow:"7",alignItems:"center",flexWrap:"wrap"}}
             >
-                <Grid container spacing={(match1) ? ((match2) ? 12 : 3) : 0}
+                <Grid container spacing={(match1) ? 3 : 0}
                  sx={{
                   height:"100%",
                   alignItems:"center",
                   justifyContent:"center"
                 }}
                  >
-                    <Grid item md={5} xs={12} >
+                    <Grid item md={5} xs={12} 
+                    sx={{
+                      textAlign:(match1) ? `center` : `left`
+                    }}>
                       <MyImage></MyImage>
                     </Grid>
-                    <Grid item md={6} xs={12}>
+                    <Grid item md={6} xs={12}
+                    sx={{
+                      textAlign:(match1) ? `center` : `left`
+                    }}>
                         <TitleName></TitleName>
                     </Grid>
                 </Grid>

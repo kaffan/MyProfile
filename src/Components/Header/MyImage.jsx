@@ -15,15 +15,16 @@ const MyImage = () =>{
    ` 
    const theme = useTheme();
    const match2 = useMediaQuery(theme.breakpoints.down('md'));
-   const match3 = useMediaQuery(`(max-width:700px)`);
+   const match3 = useMediaQuery(`(max-width:600px)`);
     return(
         <>
             <LazyLoadImage src="/profileImg.jpg"
+              placeholderSrc="/profileImg.jpg"
               style={{
-                border:"15px solid #f2e6e6",
+                border:"30px solid #efe8e8",
                 borderRadius:"50%",
-                width:`${(match2) ? ((match3) ? "65vw" : "55vw") : "27vw"}`,
-                height:`${(match2) ? ((match3) ? "65vw" : "55vw") : "27vw"}`,
+                width:`${(match2) ? ((match3) ? "45vw" : "35vw") : "22vw"}`,
+                height:`${(match2) ? ((match3) ? "45vw" : "35vw") : "22vw"}`,
                 // position:"relative",
                 boxShadow:"10px 10px 10px rgba(49, 51, 50, 0.7)"
               }}

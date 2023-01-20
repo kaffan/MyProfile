@@ -31,9 +31,15 @@ const TitleName = () =>{
     }
     return(
         <>
-            <h1 className={[styles.h1Edit, styles.textIn].join(' ')} onAnimationEnd={EventHandler} ref={ele}>
-                {arr[i]}
+            <h3>Hello! I am</h3>
+            <h1 
+            // className={[styles.h1Edit, styles.textIn].join(' ')} 
+            // onAnimationEnd={EventHandler}
+            className={styles.h1Edit} 
+            ref={ele}>
+                KHAN AFFAN SIBGATULLAH
             </h1>
+            <h3>I' am a frontend developer</h3>
         </>
     );
 }

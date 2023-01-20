@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@300&display=swap'); 
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 .textIn{
     animation: 
         typing1 3s steps(60,end),
@@ -15,15 +14,15 @@
 .h1Edit{
     font-size: 3.3vw;
     /* overflow:visible; */
-    font-family: 'Chivo Mono', monospace;
+    font-family: 'Montserrat', sans-serif;
     margin: 0 auto;
     display: block;
     overflow: hidden;
     color: rgb(36, 36, 36);
-    border-right: 0.15em solid rgb(7, 7, 7);
-    white-space: nowrap;
+    /* border-right: 0.15em solid rgb(7, 7, 7); */
+    white-space:nowrap;
     font-weight: 600;
-    text-shadow: 10px 5px 5px #5f5c5c;
+    /* text-shadow: 10px 5px 5px #5f5c5c; */
     /* animation: cursorBlink 0.5s step-end infinite; */
 }
 

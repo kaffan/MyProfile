@@ -18,29 +18,29 @@ const Navbar = () =>{
         <>
           <Grid container spacing={2} 
           sx={{
-                margin:"0.5em auto",
+                margin:"0.2em auto",
                 alignItems:"center",
                 justifyContent:"center",
-                width:`${(media) ? "100%" : "90%"}`
+                width:"100%"
              }}>
-             <Grid item md={6} xs={6}>
+             <Grid item md={7} xs={7}>
                  <AkLogo ></AkLogo>
              </Grid>
-             <Grid item md={1.5} xs={2}>
+             <Grid item xs={1.5}>
                <motion.div
                 whileHover={{scale : 1.4}}
                >
                 <a href="https://github.com/kaffan"><FontAwesomeIcon style={{...iconStyles,color:"black"}} icon={faGithub} /></a>
                </motion.div>
              </Grid>
-             <Grid item md={1.5} xs={2}>
+             <Grid item xs={1.5}>
                <motion.div
                 whileHover={{scale : 1.4}}
                >
                 <a href="https://www.linkedin.com/in/affan-khan-6626b9195/"><FontAwesomeIcon style={iconStyles} icon={faLinkedin} /></a>
                </motion.div>
              </Grid>
-             <Grid item md={1.5} xs={2}>
+             <Grid item xs={1.5}>
                <motion.div
                 whileHover={{scale : 1.4}}
                >
