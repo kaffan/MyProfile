@@ -31,7 +31,15 @@ const TitleName = () =>{
     }
     return(
         <>
-            <h3>Hello! I am</h3>
+            <h3
+            style={{
+              display:"inline-block",
+              borderRadius:"7% 25% 25% 0%",
+              backgroundColor:"#cb7df2",
+              padding:"4px",
+              color:"white",
+              fontWeight:"300"
+            }}>Hello! I am</h3>
             <h1 
             // className={[styles.h1Edit, styles.textIn].join(' ')} 
             // onAnimationEnd={EventHandler}
@@ -39,7 +47,12 @@ const TitleName = () =>{
             ref={ele}>
                 KHAN AFFAN SIBGATULLAH
             </h1>
-            <h3>I' am a frontend developer</h3>
+            <h3
+            style={{
+              padding:"0",
+              display:"inline-block",
+              margin:"0"
+            }}>I' am a frontend developer</h3>
         </>
     );
 }
