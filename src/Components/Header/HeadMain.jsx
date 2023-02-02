@@ -12,7 +12,7 @@ const HeadMain = () =>{
     const match2 = useMediaQuery(theme.breakpoints.down('sm'));
     return(
         <>
-          <Grid container direction="column" rowSpacing={(match1) ? 3 : 6.5} 
+          <Grid container direction="column" rowSpacing={(match1) ? 4 : 6.5} 
             sx={{
               // backgroundImage:"linear-gradient(to right,rgba(221, 181, 181,0.5),rgba(153, 77, 234,0.5))",
               margin:"0"

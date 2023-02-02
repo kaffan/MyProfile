@@ -19,7 +19,7 @@ const MyImage = () =>{
     return(
         <>
             <LazyLoadImage src="/profileImg.jpg"
-              placeholderSrc="/profileImg.jpg"
+              // placeholderSrc="/profileImg.jpg"
               style={{
                 border:"30px solid #efe8e8",
                 borderRadius:"50%",
