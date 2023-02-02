@@ -32,7 +32,7 @@ const Skills = () =>{
               style={{
                 color: `rgb(36, 36, 36)`,
                 // textShadow: `10px 7px 3px #5f5c5c`,
-                fontSize: "2.5rem",
+                fontSize: "2.0rem",
                 fontFamily:"Montserrat, sans-serif"
               }}
             >

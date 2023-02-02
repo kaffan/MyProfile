@@ -24,14 +24,15 @@ const About = () =>{
         background-size:"cover",
         display:"block",
         z-index:-1;
-        background-image:"linear-gradient(to right,rgba(1,1,1,0.5),rgba(1,1,1,0.5))";
+        // background-image:"linear-gradient(to right,rgba(1,1,1,0.5),rgba(1,1,1,0.5))";
       }
     `
     const aboutstyling = {
         borderRadius:"10%",
         padding:"2em",
-        border:"30px solid rgb(234, 168, 168)",
-        backgroundColor:"rgba(61, 64, 102, 0.7)",
+        border:"30px solid #e8e5e5",
+        backgroundColor:(media2) ? "rgb(188, 188, 188,0.8)" : "rgb(188, 188, 188)",
+        
 
     }
     return(
@@ -45,7 +46,7 @@ const About = () =>{
             backgroundImage:`url("/myImage.jpg.jpg")`,
             backgroundRepeat:"no-repeat",
             backgroundSize:"cover",
-            backdropFilter:"blur(5px)",
+            backdropFilter:(media2) ? "blur(5px)" : ``,
             backgroundPositionY:"50%",
             backgroundPositionX:(media2) ? "0" : "15em"
            }}
@@ -58,7 +59,7 @@ const About = () =>{
             z-index:-1;
             width:100%;
             min-height:100%;
-            background-color:rgba(0, 0 ,0 ,0.4);
+            // background-color:rgba(0, 0 ,0 ,0.4);
             // background-image:linear-gradient(to right,rgba(0,0,0,0.5),rgba(0,0,0,0.5));
           }`
            }  
@@ -86,7 +87,8 @@ const About = () =>{
             <Grid item lg={6} sm={8} sx={aboutstyling}>
                 <Grid container direction="column" spacing={2}
                 sx={{
-                    alignItems:"center"
+                    alignItems:"center",
+                    justifyContent:"center",
                 }}
                 >
                     <AboutTitle />

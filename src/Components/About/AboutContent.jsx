@@ -5,8 +5,8 @@ const AboutContent = () =>{
     const media = useMediaQuery('(max-width:600px)');
     const contentStyling = {
         fontSize:(media) ? "4vw" : "2vw",
-        textShadow:"5px 3px 2px grey",
-        color:"white"
+        textShadow:"2px 1px 2px white",
+        color:"#999797"
     }
     return(
         <>

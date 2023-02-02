@@ -11,8 +11,8 @@ const Navbar = () =>{
     const theme = useTheme();
     const media = useMediaQuery(theme.breakpoints.down('md'));
     const iconStyles = {
-      width:(media) ? "35%" : "25%",
-      height:(media) ? "35%" : "25%"
+      width:(media) ? "45%" : "25%",
+      height:(media) ? "45%" : "25%"
     }
     return (
         <>
