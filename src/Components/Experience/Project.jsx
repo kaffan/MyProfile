@@ -51,7 +51,7 @@ const Project = (props) =>{
     console.log(props.k)
     return (
       <Fragment>
-        <Grid container columnSpacing={4} 
+        <Grid container columnSpacing={4} rowSpacing={3} 
           direction={(props.k%2!=0) ? "row-reverse" : "row"}
           sx={{
             alignItems:"center"

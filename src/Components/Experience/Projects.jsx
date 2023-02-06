@@ -48,9 +48,10 @@ const Projects = () =>{
             
     return(
         <Fragment>
-            <Grid container direction="column" rowSpacing={10}
+            <Grid container direction="column" 
             sx={{
                 padding:"3em",
+                margin:"1em 0"
             }}
             >
               <Grid item>
@@ -71,7 +72,10 @@ const Projects = () =>{
                 opacity:[0.2,0.4,0.6,0.8,0.9,1]}}
                 transition={{ease:"easeInOut",duration:0.7}}
                 viewport={{amount:0.8, once:true}}>
-                    <Grid key={i} item>
+                    <Grid key={i} item
+                    sx={{
+                        margin:"2em 0"
+                    }}>
                       <Project k={i} obj={ele} ></Project>                
                     </Grid>
                 </motion.div>   
