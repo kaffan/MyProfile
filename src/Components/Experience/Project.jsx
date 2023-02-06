@@ -69,8 +69,8 @@ const Project = (props) =>{
             >
               <img 
               style={{
-                height:'15vw',
-                width:'25vw',
+                height:(media) ? '25vw' : `15vw`,
+                width: (media) ? '35vw' : `25vw`,
                 borderRadius:"7%"
               }}
               src={img} />
