@@ -1,4 +1,4 @@
-import { Grid } from "@mui/material"
+import { Grid, useMediaQuery, useTheme } from "@mui/material"
 import { useReducer } from "react";
 import { useEffect } from "react"
 import { Fragment } from "react"
@@ -20,6 +20,8 @@ const Reducer = (state,action) =>{
 const Project = (props) =>{
     const url = props.obj.url;
     const img = props.obj.img;
+    const theme = useTheme();
+    const media = useMediaQuery(theme.breakpoints.down('sm'))
     const [state,dispatch] = useReducer(Reducer,
         {
             title:"",
@@ -58,10 +60,10 @@ const Project = (props) =>{
           </Grid>
           <Grid item
           sx={{
-            flexWrap:"wrap",
-            width:"40%"
+            // flexWrap:"wrap",
+            // width:(media) ? "100%":"40%"
           }}>
-            <Grid container rowSpacing={1} direction="column"
+            <Grid container spacing={1} direction="column"
             sx={{
                 textAlign:(props.k%2!=0)?"right":"left"
             }}>
