@@ -70,9 +70,9 @@ const About = () =>{
             display:"flex",
             justifyContent:"left"
           }}
-          initial={{transform:`translateX(-100px)`,opacity:0}}
+          initial={{opacity:0}}
           whileInView={{
-            transform: [`translateX(-80px)`,`translateX(-60px)`,`translateX(-40px)`,`translateX(-20px)`,`translateX(0)`],
+            transform: [`scale(0)`,`scale(0.2)`,`scale(0.6)`,`scale(0.8)`,`scale(0.9)`,`scale(1)`],
             opacity:[0.2,0.4,0.6,0.8,1]
           }}
           viewport={{

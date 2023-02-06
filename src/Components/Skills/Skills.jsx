@@ -24,7 +24,6 @@ const Skills = () =>{
         <div style={{ padding: "4rem 2rem" }}>
           <div
             style={{
-              textAlign: match1 ? "left" : "center",
               padding: "0 4rem",
             }}
           >
@@ -33,6 +32,8 @@ const Skills = () =>{
                 color: `rgb(36, 36, 36)`,
                 // textShadow: `10px 7px 3px #5f5c5c`,
                 fontSize: "2.0rem",
+                display:"inline-block",
+                borderBottom:"solid 4px rgb(255,255,255)",
                 fontFamily:"Montserrat, sans-serif"
               }}
             >
@@ -56,12 +57,13 @@ const Skills = () =>{
                     amount : 0.3
                   }}
                   whileInView={{
-                    scale : [0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4 ,1, 1.2, 1.4, 1]
+                    // scale : [0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4 ,1, 1.2, 1.4, 1]
+                    scale : [0.2, 1.4, 0.8, 1.2, 0.8, 1]
                   }}
                   transition ={{
                     type:"spring",
-                    ease : "easeIn",
-                    duration : 1,
+                    ease : "easeInOut",
+                    duration : 1.5,
                   }}
                 >
                   <Grid container direction="column" rowSpacing={2}>
