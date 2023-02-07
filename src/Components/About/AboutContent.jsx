@@ -6,7 +6,8 @@ const AboutContent = () =>{
     const contentStyling = {
         fontSize:(media) ? "4vw" : "2vw",
         textShadow:"2px 1px 2px white",
-        color: "#635e5e"  
+        color: "#605a5a",
+        fontWeight:"900"  
         // "#7f7b7b"
     }
     return(

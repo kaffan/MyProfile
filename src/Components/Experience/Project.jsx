@@ -71,7 +71,8 @@ const Project = (props) =>{
               style={{
                 height:(media) ? '25vw' : `15vw`,
                 width: (media) ? '35vw' : `25vw`,
-                borderRadius:"7%"
+                borderRadius:"7%",
+                boxShadow:"1px 1px 10px grey"
               }}
               src={img} />
             </motion.div>

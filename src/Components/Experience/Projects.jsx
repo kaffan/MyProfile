@@ -61,7 +61,7 @@ const Projects = () =>{
                 display:"inline-block",
                 borderBottom:"solid 4px rgb(255,255,255)"
             }}>
-                EXPERIENCE
+                PROJECTS
             </h1>
               </Grid>  
               {arr.map((ele,i)=>(
