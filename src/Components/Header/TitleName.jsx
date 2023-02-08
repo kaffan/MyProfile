@@ -38,7 +38,8 @@ const TitleName = () =>{
               backgroundColor:"#cb7df2",
               padding:"4px",
               color:"white",
-              fontWeight:"300"
+              fontWeight:"300",
+              fontFamily:"Roboto"
             }}>Hello! I am</h3>
             <h1 
             // className={[styles.h1Edit, styles.textIn].join(' ')} 
@@ -51,7 +52,8 @@ const TitleName = () =>{
             style={{
               padding:"0",
               display:"inline-block",
-              margin:"0"
+              margin:"0",
+              fontFamily:"Roboto"
             }}>I' am a frontend developer</h3>
         </>
     );

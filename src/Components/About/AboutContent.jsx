@@ -7,7 +7,8 @@ const AboutContent = () =>{
         fontSize:(media) ? "4vw" : "2vw",
         textShadow:"2px 1px 2px white",
         color: "#605a5a",
-        fontWeight:"900"  
+        fontWeight:"900",
+        fontFamily:"Roboto"  
         // "#7f7b7b"
     }
     return(
