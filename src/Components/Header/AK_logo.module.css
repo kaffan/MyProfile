@@ -3,7 +3,7 @@
 .logo{
     text-align: center;
     /* animation: spin 2s linear infinite; */
-    border: 2px solid red;
+    border: 2px solid rgb(76, 73, 73);
     height: 60px;
     width: 60px;
     border-radius: 50%;
@@ -12,9 +12,9 @@
 .logo_text{
     color: rgba(0,0,0,1);
     position: relative;
-    top: 30%;
+    top: 35%;
     font-size: large;
-    font-family: 'Rubik', sans-serif;
+    font-family: 'monserrat';
     /* border: 2px solid black; */
 }
 

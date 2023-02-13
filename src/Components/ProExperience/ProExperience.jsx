@@ -54,7 +54,7 @@ const ProExperience = () => {
                     <motion.div
                         initial={{
                             opacity: 0,
-                            transform: "translateX(-300px)",
+                            transform: "translateX(-50px)",
                         }}
                         whileInView={{
                             transform: "translateX(0px)",

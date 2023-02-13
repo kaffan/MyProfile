@@ -12,23 +12,34 @@ const HeadMain = () =>{
     const match2 = useMediaQuery(theme.breakpoints.down('sm'));
     return(
         <>
-          <Grid container direction="column" rowSpacing={(match1) ? 4 : 6.5} 
+          <Grid container direction="column" 
+          rowSpacing={3} 
             sx={{
               // backgroundImage:"linear-gradient(to right,rgba(221, 181, 181,0.5),rgba(153, 77, 234,0.5))",
-              margin:"0"
+              margin:"0",
+              minHeight:"100vh"
             }} 
           >
             <Grid item 
-             sx={{flexGrow:"2"}}
+             sx={{
+              flexGrow:"2",
+              flexGrow:"1.5"
+            }}
             ><Navbar /></Grid>
             <Grid item
-            sx={{flexGrow:"7",alignItems:"center",flexWrap:"wrap"}}
+            sx={{
+              flexGrow:"7",
+              alignItems:"center",
+              flexWrap:"wrap",
+              flexGrow:"2"
+            }}
             >
                 <Grid container spacing={(match1) ? 6 : 0}
                  sx={{
                   height:"100%",
                   alignItems:"center",
-                  justifyContent:"center"
+                  justifyContent:"center",
+                  flexGrow:"1"
                 }}
                  >
                     <Grid item md={5} xs={12} 
