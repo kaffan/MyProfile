@@ -3,9 +3,11 @@
 .logo{
     text-align: center;
     /* animation: spin 2s linear infinite; */
-    border: 2px solid rgb(76, 73, 73);
+    /* border: 2px solid rgb(76, 73, 73); */
     height: 60px;
     width: 60px;
+    position: relative;
+    z-index: 2;
     border-radius: 50%;
 }
 
@@ -16,6 +18,19 @@
     font-size: large;
     font-family: 'monserrat';
     /* border: 2px solid black; */
+}
+.logo::after{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    height: 60px;
+    width: 60px;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+    border-right: 2px solid rgb(76, 73, 73);
+    /* background-color: rgba(0,0,0,1); */
 }
 
 @keyframes spin{
